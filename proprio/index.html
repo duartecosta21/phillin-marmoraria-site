@@ -39,7 +39,7 @@ main{background:var(--char)}
 .hdr.sc::before{opacity:1}
 .hdr.sc{padding:.7rem 0;color:var(--ink)}
 .hl{width:clamp(112px,10vw,156px);display:block;--lg-s:#fff;--lg-r:var(--gold);--lg-t:#fff;transition:width .5s var(--ease)}
-.hdr.sc .hl{--lg-s:var(--cu);--lg-r:var(--ink);--lg-t:var(--ink)}
+.hdr.sc .hl{--lg-s:var(--ink);--lg-r:var(--ink);--lg-t:var(--ink)}
 .hdr.mo .hl{--lg-s:#fff;--lg-r:var(--gold);--lg-t:#fff}
 .mot .hl{animation:lgIn 1.2s cubic-bezier(.65,0,.35,1) 1s both}
 @keyframes lgIn{from{clip-path:inset(-20% 100% -20% -5%)}to{clip-path:inset(-20% -5% -20% -5%)}}
@@ -57,7 +57,7 @@ main{background:var(--char)}
 .burger[aria-expanded=true]{color:#fff}.burger[aria-expanded=true]::before{transform:translateY(5.5px) rotate(45deg)}.burger[aria-expanded=true]::after{transform:translateY(-5.5px) rotate(-45deg)}.burger[aria-expanded=true] span{opacity:0}
 /* logo svg */
 .lg{display:block;width:100%;height:auto;overflow:visible}
-.lg .s{fill:var(--lg-s,var(--cu))}.lg .r{fill:var(--lg-r,var(--ink))}.lg .t{fill:var(--lg-t,var(--ink));font-family:Montserrat,sans-serif;font-weight:500}
+.lg .s{fill:var(--lg-s,var(--ink))}.lg .r{fill:var(--lg-r,var(--ink))}.lg .t{fill:var(--lg-t,var(--ink));font-family:Montserrat,sans-serif;font-weight:500}
 .lg-w{--lg-s:#fff;--lg-r:var(--gold);--lg-t:#fff}
 /* abertura: a chapa se abre por um corte que segue o veio */
 .cv{position:fixed;inset:0;z-index:200;pointer-events:none;display:none}
