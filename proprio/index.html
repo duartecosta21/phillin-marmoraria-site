@@ -2,11 +2,11 @@
 <link rel="preload" as="font" type="font/woff2" href="/phillin-marmoraria-site/proprio/assets/fonts/Syne-600.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="/phillin-marmoraria-site/proprio/assets/fonts/RedHatDisplay-400.woff2" crossorigin><link rel="preload" as="image" type="image/avif" imagesrcset="/phillin-marmoraria-site/proprio/assets/img/hero-cozinha-560.avif 560w, /phillin-marmoraria-site/proprio/assets/img/hero-cozinha-800.avif 800w, /phillin-marmoraria-site/proprio/assets/img/hero-cozinha-1100.avif 1100w, /phillin-marmoraria-site/proprio/assets/img/hero-cozinha-1440.avif 1440w" imagesizes="100vw" fetchpriority="high">
 <style>@font-face{font-family:Syne;src:url(/phillin-marmoraria-site/proprio/assets/fonts/Syne-600.woff2)format("woff2");font-weight:400 800;font-display:swap}
 @font-face{font-family:"Red Hat Display";src:url(/phillin-marmoraria-site/proprio/assets/fonts/RedHatDisplay-400.woff2)format("woff2");font-weight:300 700;font-display:swap}
-@font-face{font-family:"Monsieur La Doulaise";src:url(/phillin-marmoraria-site/proprio/assets/fonts/MonsieurLaDoulaise-400.woff2)format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Pinyon Script";src:url(/phillin-marmoraria-site/proprio/assets/fonts/PinyonScript-400.woff2)format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:Montserrat;src:url(/phillin-marmoraria-site/proprio/assets/fonts/Montserrat-500.woff2)format("woff2");font-weight:500;font-display:swap}
 :root{--ink:#15130f;--char:#221f1a;--char2:#2d2923;--ivory:#f6f2ea;--sand:#ebe5d8;--gold:#c6a052;--gold-d:#8d7230;--cu:#d46949;--mut:#6f685c;--mut-l:#a79f90;
 --pad:clamp(1.5rem,5vw,6rem);--ease:cubic-bezier(.16,1,.3,1);--ease2:cubic-bezier(.22,1,.36,1);
---f-t:Syne,"Helvetica Neue",Arial,sans-serif;--f-b:"Red Hat Display","Helvetica Neue",Arial,sans-serif;--f-s:"Monsieur La Doulaise","Snell Roundhand",cursive}
+--f-t:Syne,"Helvetica Neue",Arial,sans-serif;--f-b:"Red Hat Display","Helvetica Neue",Arial,sans-serif;--f-s:"Pinyon Script","Snell Roundhand",cursive}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
 html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
@@ -18,12 +18,12 @@ img{display:block;max-width:100%;height:auto}a{color:inherit;text-decoration:non
 /* tipografia */
 h1,h2,h3{font-family:var(--f-t);font-weight:600;letter-spacing:-.02em;line-height:1.12}
 .disp{font-size:clamp(2.25rem,4.5vw,5rem);line-height:1.12}
-.script{font-family:var(--f-s);font-weight:400;font-size:1.55em;letter-spacing:0;line-height:0;color:var(--gold);display:inline-block;padding:0 .04em;vertical-align:baseline}
+.script{font-family:var(--f-s);font-weight:400;font-size:1.3em;letter-spacing:0;line-height:0;color:var(--gold);display:inline-block;padding:0 .04em;vertical-align:baseline}
 .lab{font-family:var(--f-t);font-weight:500;font-size:clamp(.66rem,.8vw,.76rem);letter-spacing:.26em;text-transform:uppercase}
 .lead{font-size:clamp(1rem,1.25vw,1.2rem);font-weight:300;line-height:1.75;color:var(--mut)}
 .dk .lead{color:var(--mut-l)}
 /* mascara de linha (sem cortar descendentes) */
-.ln{display:block;overflow:hidden;padding:.14em 0 .2em;margin:-.14em 0 -.2em}
+.ln{display:block;overflow:hidden;padding:.14em 0 .34em;margin:-.14em 0 -.34em}
 .ln>span{display:block;transform:translateY(112%);transition:transform 1.1s var(--ease);transition-delay:calc(var(--i,0)*.12s + var(--d,0s))}
 .in .ln>span,.ln.in>span{transform:none}
 .rv{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
@@ -81,7 +81,7 @@ main{background:var(--char)}
 .hero-in{position:relative;z-index:20;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) clamp(6rem,11vh,8rem);max-width:1440px;margin:0 auto}
 .hero h1{font-size:clamp(2.1rem,5vw,5rem);line-height:1.1;max-width:14ch;text-wrap:balance}
 .hero h1.sm{font-size:clamp(1.9rem,4.2vw,4.2rem);max-width:none}
-.hero h1 .script{font-size:1.35em;margin-right:.04em;color:#e6cc8f}
+.hero h1 .script{font-size:1.32em;margin-right:.04em;color:#e6cc8f}
 .hero-sub{margin-top:clamp(.8rem,1.6vw,1.5rem);font-size:clamp(1rem,1.4vw,1.3rem);font-weight:300;color:rgba(255,255,255,.9);max-width:34ch;opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease) .5s,transform .8s var(--ease) .5s}
 .hero-cta{margin-top:clamp(1.2rem,2.4vw,2rem);display:flex;gap:14px;flex-wrap:wrap;opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease) .7s,transform .8s var(--ease) .7s}
 .hero.text .hero-sub,.hero.text .hero-cta{opacity:1;transform:none}
