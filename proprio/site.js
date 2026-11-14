@@ -47,7 +47,7 @@ D.fonts&&D.fonts.ready&&D.fonts.ready.then(function(){measure();onScroll()});
 W.addEventListener('load',function(){measure();onScroll()});
 measure();onScroll();
 /* abertura: o corte (CSS) abre a chapa; o texto entra junto */
-if(hero){if(RM)hero.classList.add('text');else setTimeout(function(){hero.classList.add('text')},1250)}
+if(hero){if(RM)hero.classList.add('text');else setTimeout(function(){hero.classList.add('text')},120)}
 /* reveal */
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -12% 0px',threshold:.05});
 $$('.rv,.sh,.st,.cota,.disp,.sv').forEach(function(el){io.observe(el)});
